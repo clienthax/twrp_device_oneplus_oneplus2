@@ -15,7 +15,7 @@ TARGET_CPU_ABI2 :=
 TARGET_CPU_VARIANT := generic
 
 TARGET_2ND_ARCH := arm
-TARGET_2ND_ARCH_VARIANT := armv7-a-neon
+TARGET_2ND_ARCH_VARIANT := armv8-a
 TARGET_2ND_CPU_ABI := armeabi-v7a
 TARGET_2ND_CPU_ABI2 := armeabi
 TARGET_2ND_CPU_VARIANT := cortex-a53.a57
@@ -34,7 +34,7 @@ BOARD_RAMDISK_OFFSET := 0x01000000
 TARGET_KERNEL_ARCH := arm64
 TARGET_KERNEL_HEADER_ARCH := arm64
 BOARD_MKBOOTIMG_ARGS := --tags_offset 0x00000100
-TARGET_PREBUILT_KERNEL := device/oneplus/oneplus2/kernel
+TARGET_PREBUILT_KERNEL := device/oneplus/oneplus2/prebuilt/kernel
 
 # Partitions
 BOARD_BOOTIMAGE_PARTITION_SIZE := 67108864
@@ -47,7 +47,7 @@ TARGET_USERIMAGES_USE_EXT4 := true
 TARGET_USERIMAGES_USE_F2FS := true
 
 # Recovery
-TARGET_RECOVERY_FSTAB := device/oneplus/oneplus2/twrp.fstab
+TARGET_RECOVERY_FSTAB := device/oneplus/oneplus2/recovery/root/etc/twrp.fstab
 
 # TWRP
 TW_THEME := portrait_hdpi
@@ -58,3 +58,5 @@ TW_DEFAULT_LANGUAGE := en-US
 TW_NO_LEGACY_PROPS := true
 TW_EXTRA_LANGUAGES := true
 TW_INCLUDE_CRYPTO := true
+TW_USE_TOOLBOX := true
+
