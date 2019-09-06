@@ -47,7 +47,7 @@ TARGET_USERIMAGES_USE_EXT4 := true
 TARGET_USERIMAGES_USE_F2FS := true
 
 # Recovery
-TARGET_RECOVERY_FSTAB := device/oneplus/oneplus2/twrp.fstab
+TARGET_RECOVERY_FSTAB := device/oneplus/oneplus2/recovery/root/etc/twrp.fstab
 
 # TWRP
 TW_THEME := portrait_hdpi
@@ -58,3 +58,5 @@ TW_DEFAULT_LANGUAGE := en-US
 TW_NO_LEGACY_PROPS := true
 TW_EXTRA_LANGUAGES := true
 TW_INCLUDE_CRYPTO := true
+TW_USE_TOOLBOX := true
+

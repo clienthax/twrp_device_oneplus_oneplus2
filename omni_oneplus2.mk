@@ -12,11 +12,14 @@ PRODUCT_RELEASE_NAME := oneplus2
 PRODUCT_PACKAGES += charger charger_res_images
 
 PRODUCT_COPY_FILES += \
-    device/oneplus/oneplus2/prebuilt/kernel:kernel \
-	device/oneplus/oneplus2/twrp.fstab:root/etc/twrp.fstab
+    device/oneplus/oneplus2/prebuilt/kernel:kernel
 
 ## Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := oneplus2
 PRODUCT_NAME := omni_oneplus2
 PRODUCT_MODEL := OnePlus 2
 PRODUCT_MANUFACTURER := OnePlus
+
+# Fixup for official stuff
+PRODUCT_BUILD_PROP_OVERRIDES += TARGET_DEVICE=OnePlus2 PRODUCT_NAME=OnePlus2
+
